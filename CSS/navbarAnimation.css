@@ -1,0 +1,11 @@
+.nav li {
+    background: linear-gradient(to left , #0700b8 0%, #00ff88 150%);
+    background-size: 202% 100%;
+    background-position: right bottom;
+    transition: all 2s ease;
+  }
+  
+  .nav li:hover{
+    background-position: left bottom;
+  }
+  

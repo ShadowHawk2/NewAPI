@@ -2,29 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Weather API</title>
+        <title>Weather - Info</title>
         <link rel="stylesheet" href="CSS/weatherCSS.css">
+        <link rel="stylesheet" href="CSS/navbarAnimation.css">
     </head>
     <body>
 
-    <ul class="topnav">
-        <li><a class="active">Weather - API</a></li>
-    </ul>
+        <ul class="topnav nav">
+            <li><a class="nav-link" href="index.html">Weather - Info</a></li>
+            <li class="right"><a href="Weather.html">Weather - Now</a></li>
+        </ul>
           
-    <div class="strand-grid">
-        <div class="10-Grader">
-            <h2>10 - Grader</h2>
-            <img class="størelse" src="Images/10-grader.jpg" alt="10-G">
-        </div>
-        <div class="15-Grader">
-            <h2>15 - Grader</h2>
-            <img class="størelse" src="Images/15-grader.jpg" alt="15-G">
-        </div>
-        <div class="20-Grader">
-            <h2>20 - Grader</h2>
-            <img class="størelse" src="Images/20-grader.jpg" alt="20-G">
-        </div>
-    </div>
+            <div class="strand-grid">
+                <div class="10-Grader">
+                    <h2>10°C - Grader</h2>
+                    <img class="størelse" id="shadow" src="Images/10-grader.jpg" alt="10-G">
+                </div>
+
+                <div class="15-Grader">
+                    <h2>15°C - Grader</h2>
+                    <img class="størelse" id="shadow" src="Images/15-grader.jpg" alt="15-G">
+                </div>
+
+                <div class="20-Grader">
+                    <h2>20°C - Grader</h2>
+                    <img class="størelse" id="shadow" src="Images/20-grader.jpg" alt="20-G">
+                </div>
+
+            </div>
 
         <script src="JavaScript/WeatherAPI.js"></script>
     </body>

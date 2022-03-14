@@ -1,5 +1,6 @@
 html {
     min-height: 100%;
+    min-width: 100%;
 }
 
 body {    
@@ -27,12 +28,7 @@ ul.topnav li a {
     text-decoration: none;
     font-size: 25px;
 }
-  
-  /* Active color background */
-ul.topnav li a.active {
-      background-color: RGB(0, 54, 151);
-}
-  
+
   /* Float right */
 ul.topnav li.right {
       float: right;
@@ -45,6 +41,16 @@ ul.topnav li.right {
     grid-gap: 5px;
     padding: 10px;
     margin-top: 50px;
+    color: white;
+
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .divKon-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
 
     text-align: center;
     font-size: 15px;
@@ -53,4 +59,46 @@ ul.topnav li.right {
   .størelse {
       height: 375px;
       width: 600px;
+  }
+
+  .skrift {
+      font-size: 30px;
+  }
+
+  .center {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+  }
+
+  #shadow {
+    box-shadow: 1px 1px 3px 2px #0700b8, 3px 3px 3px 2px #00ff88;
+  }
+
+
+  /* Div til konverterer */
+
+  .divKon {
+    background-color: linear-gradient(180deg, #0700b8 5%, #00ff88 100%);
+    color: white;
+    font-size: 25px;
+    height: 375px;
+    width: 600px;
+    margin: auto;
+  }
+
+  .padding {
+    padding-left: 50px;
+    text-align: left;
+  }
+
+  input[type=text] {
+    width: 18%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    background: #0444ac;
   }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather - Now</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/weatherCSS.css">
+        <link rel="stylesheet" href="CSS/navbarAnimation.css">
+    </head>
+    <body>
+        <ul class="topnav nav">
+            <li><a class="nav-link" href="index.html">Weather - Info</a></li>
+            <li class="right"><a href="Weather.html">Weather - Now</a></li>
+        </ul>
+
+    <!--Konverterer og Tempratur-->
+            <div class="divKon-grid">
+                <div class="divKon" id="shadow">
+                    <p class="skrift">Konverterer</p>
+                    <div class="padding">
+                        <label>Celsius:</label>
+                        <input type="text" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                        <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <p id="vær"></p>
+                    <p class="skrift" id="temp"></p>
+                </div>
+            </div>
+
+        <script src="JavaScript/WeatherAPI.js"></script>
+    </body>
+</html>
